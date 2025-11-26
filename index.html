@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Backend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Include Header -->
+  <div w3-include-html="components/header.html"></div>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+    <div class="text-center px-6">
+      <img src="assets/images/profile.jpg" alt="Your Photo" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-xl"/>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Your Name</span></h1>
+      <p class="text-xl md:text-2xl mb-6">Backend Developer | Python • Laravel • Android</p>
+      <p class="text-lg max-w-2xl mx-auto mb-8">
+        Diploma student passionate about AI/ML, Backend & Cloud. 
+        Seeking internship/training opportunities in Germany 🇩🇪
+      </p>
+      <div class="space-x-4">
+        <a href="projects.html" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">View Projects</a>
+        <a href="contact.html" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Footer -->
+  <div w3-include-html="components/footer.html"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Simple include function for header/footer
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              elmnt.innerHTML = this.responseText;
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          return;
+        }
+      }
+    }
+    includeHTML();
+  </script>
+</body>
+</html>

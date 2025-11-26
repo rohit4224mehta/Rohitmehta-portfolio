@@ -1,0 +1,15 @@
+/* assets/css/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active nav link */
+nav a:hover, nav a.active {
+  color: #4f46e5 !important;
+  font-weight: 600;
+}
