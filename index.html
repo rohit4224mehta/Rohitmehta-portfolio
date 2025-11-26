@@ -3,53 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Backend Developer</title>
+  <title>Rohit Mehta - Backend Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body class="bg-gray-50">
 
-  <!-- Include Header -->
+  <!-- Header -->
   <div w3-include-html="components/header.html"></div>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
-    <div class="text-center px-6">
-      <img src="assets/images/profile.jpg" alt="Your Photo" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-xl"/>
-      <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Your Name</span></h1>
-      <p class="text-xl md:text-2xl mb-6">Backend Developer | Python • Laravel • Android</p>
-      <p class="text-lg max-w-2xl mx-auto mb-8">
-        Diploma student passionate about AI/ML, Backend & Cloud. 
-        Seeking internship/training opportunities in Germany 🇩🇪
+  <!-- ================= HERO SECTION ================= -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white pt-20">
+    <div class="text-center px-6 animate-fadeIn">
+      
+      <img src="assets/images/IMG20250607125138.jpg" alt="Profile Photo" 
+           class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-xl"/>
+
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">
+        Hi, I'm <span class="text-yellow-300">Rohit Mehta</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl mb-6 font-light">
+        Backend Developer • Laravel • Python • Android (Kotlin)
       </p>
+
+      <p class="text-lg max-w-2xl mx-auto mb-8 font-light">
+        Diploma Computer Engineering student passionate about backend development, AI/ML, cloud computing & mobile apps.  
+        Currently preparing for Germany 🇩🇪 internships and language (A1).
+      </p>
+
       <div class="space-x-4">
-        <a href="projects.html" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">View Projects</a>
-        <a href="contact.html" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600">Contact Me</a>
+        <a href="projects.html" 
+           class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          View Projects
+        </a>
+
+        <a href="contact.html" 
+           class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">
+          Contact Me
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Include Footer -->
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-10">Skills & Technologies</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Laravel</h3>
+          <p class="text-gray-600 text-sm">REST APIs, Auth, CRUD, MVC</p>
+        </div>
+
+        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Python</h3>
+          <p class="text-gray-600 text-sm">Automation, Scripts, Flask Basics</p>
+        </div>
+
+        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Android (Kotlin)</h3>
+          <p class="text-gray-600 text-sm">Jetpack Compose, MVVM</p>
+        </div>
+
+        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Frontend</h3>
+          <p class="text-gray-600 text-sm">HTML, CSS, Tailwind</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS PREVIEW ================= -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      
+      <h2 class="text-4xl font-bold text-gray-800 mb-10">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">NewsFlux App</h3>
+          <p class="text-gray-600 text-sm mb-4">News app using Kotlin + Jetpack Compose with Firebase Firestore.</p>
+          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">E-commerce Backend</h3>
+          <p class="text-gray-600 text-sm mb-4">Laravel admin panel with product management & REST APIs.</p>
+          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-600 text-sm mb-4">This professional portfolio built with Tailwind CSS.</p>
+          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE / CALLOUT ================= -->
+  <section class="py-20 bg-indigo-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Looking for Internship Opportunities</h2>
+    <p class="max-w-2xl mx-auto text-lg font-light">
+      Seeking Backend / Software Development internship roles in Germany, India, or remote.  
+      Ready to contribute, learn & grow.
+    </p>
+
+    <a href="contact.html" 
+       class="mt-8 inline-block bg-white text-indigo-700 px-10 py-3 rounded-lg shadow hover:bg-gray-100 font-semibold transition">
+      Hire Me
+    </a>
+  </section>
+
+  <!-- Footer -->
   <div w3-include-html="components/footer.html"></div>
 
+
+  <!-- Include Script -->
   <script src="assets/js/main.js"></script>
   <script>
-    // Simple include function for header/footer
     function includeHTML() {
       var z, i, elmnt, file, xhttp;
       z = document.getElementsByTagName("*");
       for (i = 0; i < z.length; i++) {
         elmnt = z[i];
+
         file = elmnt.getAttribute("w3-include-html");
         if (file) {
           xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
+          xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
               elmnt.innerHTML = this.responseText;
               elmnt.removeAttribute("w3-include-html");
               includeHTML();
             }
-          }
+          };
           xhttp.open("GET", file, true);
           xhttp.send();
           return;
@@ -58,5 +152,17 @@
     }
     includeHTML();
   </script>
+
+  <!-- Simple Animation -->
+  <style>
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </body>
 </html>
