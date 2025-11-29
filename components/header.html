@@ -1,40 +1,55 @@
 <!-- components/header.html -->
-<nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+<nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16">
+    <div class="flex justify-between items-center h-16">
 
-      <!-- Logo -->
-      <div class="flex items-center">
-        <a href="/index.html" class="text-2xl font-bold text-indigo-600">
+      <!-- Logo / Name -->
+      <div class="flex-shrink-0">
+        <a href="/index.html" class="text-2xl font-extrabold text-indigo-600 hover:text-indigo-700 transition">
           Rohit Mehta
         </a>
       </div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="/index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
-        <a href="/about.html" class="text-gray-700 hover:text-indigo-600 font-medium">About</a>
-        <a href="/projects.html" class="text-gray-700 hover:text-indigo-600 font-medium">Projects</a>
-        <a href="/contact.html" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-10">
+        <a href="/index.html" 
+           class="nav-link text-gray-700 font-medium hover:text-indigo-600 transition relative">
+          Home
+        </a>
+        <a href="/about.html" 
+           class="nav-link text-gray-700 font-medium hover:text-indigo-600 transition relative">
+          About
+        </a>
+        <a href="/projects.html" 
+           class="nav-link text-gray-700 font-medium hover:text-indigo-600 transition relative">
+          Projects
+        </a>
+        <a href="/contact.html" 
+           class="nav-link text-gray-700 font-medium hover:text-indigo-600 transition relative">
+          Contact
+        </a>
 
-        <!-- Desktop Download CV -->
-        <a 
-          href="/assets/Rohit-Mehta-Resume.pdf"
-          download="Rohit-Mehta-Resume.pdf"
-          class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition"
-        >
-          Download CV ↓
+        <!-- Download CV Button (Desktop) -->
+        <a href="/assets/Rohit-Mehta-Resume.pdf"
+           download="Rohit_Mehta_Resume.pdf"
+           class="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-indigo-700 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          Download CV
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <div class="md:hidden flex items-center">
-        <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
-          <svg id="menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-            <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M6 18L18 6M6 6l12 12" />
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" 
+                aria-label="Toggle menu" 
+                class="p-2 rounded-lg text-gray-600 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+          <svg id="menu-open" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-close" class="hidden w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
       </div>
@@ -42,37 +57,60 @@
     </div>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden bg-white border-t shadow-sm">
-    <div class="px-4 pt-3 pb-4 space-y-2">
-
-      <a href="/index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</a>
-      <a href="/about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
-      <a href="/projects.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Projects</a>
-      <a href="/contact.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Contact</a>
-
-      <!-- Mobile Download CV -->
-      <a 
-        href="/assets/Rohit-Mehta-Resume.pdf"
-        download="Rohit-Mehta-Resume.pdf"
-        class="block w-full text-center px-3 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
-      >
-        Download CV
-      </a>
-
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 shadow-lg">
+    <div class="px-4 py-3 space-y-1">
+      <a href="/index.html" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">Home</a>
+      <a href="/about.html" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">About</a>
+      <a href="/projects.html" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">Projects</a>
+      <a href="/contact.html" class="mobile-nav-link block px-4 py-3 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">Contact</a>
+      
+      <div class="pt-4 mt-4 border-t border-gray-200">
+        <a href="/assets/Rohit-Mehta-Resume.pdf"
+           download="Rohit_Mehta_Resume.pdf"
+           class="block w-full text-center bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition shadow-md">
+          Download CV
+        </a>
+      </div>
     </div>
   </div>
 </nav>
 
+<!-- Active Link Indicator + Mobile Toggle Script -->
 <script>
-  const btn = document.getElementById("mobile-menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const openIcon = document.getElementById("menu-open");
-  const closeIcon = document.getElementById("menu-close");
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  btn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-    openIcon.classList.toggle("hidden");
-    closeIcon.classList.toggle("hidden");
+    // Desktop active link
+    document.querySelectorAll(".nav-link").forEach(link => {
+      const href = link.getAttribute("href").split("/").pop();
+      if (href === currentPage || (currentPage === "index.html" && href === "/index.html")) {
+        link.classList.add("text-indigo-600");
+        link.innerHTML += '<span class="absolute -bottom-1 left-0 w-full h-0.5 bg-indigo-600"></span>';
+      }
+    });
+
+    // Mobile active link
+    document.querySelectorAll(".mobile-nav-link").forEach(link => {
+      const href = link.getAttribute("href").split("/").pop();
+      if (href === currentPage || (currentPage === "index.html" && href === "/index.html")) {
+        link.classList.add("text-indigo-600", "bg-indigo-50");
+      }
+    });
+
+    // Mobile menu toggle
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const openIcon = document.getElementById("menu-open");
+    const closeIcon = document.getElementById("menu-close");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      openIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    });
   });
 </script>
+
+<!-- Extra spacing so content doesn't hide under fixed header -->
+<div class="h-16"></div>

@@ -1,134 +1,195 @@
-{"id":"52942","variant":"standard","title":"Updated Professional Portfolio Homepage"}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohit Mehta - Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- SEO -->
+  <meta name="description" content="Rohit Mehta – Backend Developer skilled in Laravel, Python, Kotlin, SQL, and REST APIs. Final-year Diploma Computer Engineering student seeking global internship opportunities in 2026.">
+  <meta name="author" content="Rohit Mehta">
+
+  <title>Rohit Mehta • Backend Developer Portfolio 2026</title>
+
+  <!-- Tailwind + Inter Font -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui'] },
+          colors: { indigo: { 600: '#4f46e5', 700: '#4338ca', 800: '#3730a3' }}
+        }
+      }
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-  <!-- Header -->
+  <!-- Include Header -->
   <div w3-include-html="components/header.html"></div>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-700 via-indigo-800 to-purple-900 text-white relative">
+    <div class="absolute inset-0 bg-black/30"></div>
 
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center brightness-50"
-      style="background-image: url('assets/images/german-language-bg.jpg');"></div>
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
 
-    <!-- Glassmorphism Container -->
-    <div class="relative max-w-3xl mx-auto text-center px-6 py-10 bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl animate-fadeIn border border-white/20">
+      <!-- Internship Badge (Updated - Global) -->
+      <div class="inline-flex items-center gap-2 bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold mb-8 shadow-xl">
+        🌍 Open for Global Internship Opportunities – 2026
+      </div>
 
-      <img src="assets/images/IMG20250607125138.jpg" alt="Profile Photo"
-        class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-xl" />
+      <!-- Profile Image -->
+      <img src="assets/images/IMG20250607125138.jpg"
+           class="w-44 h-44 rounded-full mx-auto mb-8 border-8 border-white shadow-2xl object-cover"
+           alt="Rohit Mehta">
 
-      <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-3 tracking-tight">
-        Rohit <span class="text-yellow-300">Mehta</span>
-      </h1>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Rohit Mehta</h1>
 
-      <p class="text-xl md:text-2xl text-gray-200 font-light mb-4">
-        Backend Developer • Laravel • Python • Android (Kotlin)
+      <p class="text-2xl md:text-3xl font-light mb-6 opacity-95">
+        Backend Developer • Laravel • Python • Kotlin
       </p>
 
-      <p class="text-gray-100 max-w-xl mx-auto text-lg font-light leading-relaxed">
-        Passionate Computer Engineering student skilled in Backend Development, Cloud, Android & Automation.  
-        Preparing for **Germany 🇩🇪 internships**, German A1, and advanced development roles.
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+        Final-year Diploma in Computer Engineering (RK University).  
+        Passionate about building secure APIs, scalable backend systems, Android applications,  
+        and automation tools.  
+        <strong>Open to internships in Backend, Full-Stack, or Android Development in 2026.</strong>
       </p>
 
-      <div class="mt-8 space-x-4">
+      <div class="flex flex-col sm:flex-row gap-5 justify-center mb-10">
         <a href="projects.html"
-          class="bg-white text-indigo-700 px-8 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
+           class="bg-white text-indigo-700 px-10 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-100 hover:shadow-2xl transition transform hover:-translate-y-1">
           View Projects
         </a>
-
-        <a href="contact.html"
-          class="border-2 border-white px-8 py-3 rounded-lg text-white font-semibold hover:bg-white hover:text-indigo-700 transition">
-          Contact Me
+        <a href="assets/Rohit_Mehta_Resume.pdf" download
+           class="border-4 border-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-indigo-700 transition transform hover:-translate-y-1 flex items-center gap-3">
+          📄 Download Resume
         </a>
       </div>
-    </div>
 
+    </div>
   </section>
 
-  <!-- ================= SKILLS SECTION ================= -->
-  <section class="py-20 bg-white">
+
+
+  <!-- SKILLS -->
+  <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold text-gray-800 mb-10">Core Skills & Technologies</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-16">Technical Skills</h2>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-
-        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-1">Laravel</h3>
-          <p class="text-gray-600 text-sm">REST APIs • Auth • MVC • CRUD</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+        
+        <div class="group">
+          <div class="bg-indigo-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-5 group-hover:bg-indigo-600 transition">
+            <span class="text-3xl font-extrabold text-indigo-600 group-hover:text-white">L</span>
+          </div>
+          <h3 class="text-xl font-bold">Laravel</h3>
+          <p class="text-gray-600">REST APIs, Auth, Eloquent ORM</p>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-1">Python</h3>
-          <p class="text-gray-600 text-sm">Automation • Scripting • Flask</p>
+        <div class="group">
+          <div class="bg-indigo-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-5 group-hover:bg-indigo-600 transition">
+            <span class="text-3xl font-extrabold text-indigo-600 group-hover:text-white">Py</span>
+          </div>
+          <h3 class="text-xl font-bold">Python</h3>
+          <p class="text-gray-600">Flask, Automation, Scripts</p>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-1">Android (Kotlin)</h3>
-          <p class="text-gray-600 text-sm">Jetpack Compose • MVVM</p>
+        <div class="group">
+          <div class="bg-indigo-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-5 group-hover:bg-indigo-600 transition">
+            <span class="text-3xl font-extrabold text-indigo-600 group-hover:text-white">K</span>
+          </div>
+          <h3 class="text-xl">Kotlin</h3>
+          <p class="text-gray-600">Jetpack Compose, MVVM</p>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-1">Frontend</h3>
-          <p class="text-gray-600 text-sm">HTML • CSS • Tailwind</p>
+        <div class="group">
+          <div class="bg-indigo-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-5 group-hover:bg-indigo-600 transition">
+            <span class="text-3xl font-extrabold text-indigo-600 group-hover:text-white">DB</span>
+          </div>
+          <h3 class="text-xl">MySQL & Git</h3>
+          <p class="text-gray-600">Database + Version Control</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ================= PROJECTS PREVIEW ================= -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold text-gray-800 mb-10">Featured Projects</h2>
 
-      <div class="grid md:grid-cols-3 gap-8">
 
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
-          <h3 class="text-xl font-semibold mb-2">NewsFlux App</h3>
-          <p class="text-gray-600 text-sm mb-4">Kotlin + Jetpack + Firebase Firestore news platform.</p>
-          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+  <!-- PROJECTS -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Featured Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- NewsFlux -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-4">
+          <div class="h-56 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+            <span class="text-white text-6xl font-extrabold opacity-20">NEWS</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-3">NewsFlux App</h3>
+            <p class="text-gray-600 mb-4">Kotlin + Compose news platform with Firebase & custom APIs.</p>
+            <a href="projects.html" class="text-indigo-600 font-bold hover:underline">View Project →</a>
+          </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
-          <h3 class="text-xl font-semibold mb-2">E-commerce Backend</h3>
-          <p class="text-gray-600 text-sm mb-4">Laravel-based backend with REST APIs.</p>
-          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+        <!-- Ecommerce -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-4">
+          <div class="h-56 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+            <span class="text-white text-6xl font-extrabold opacity-20">SHOP</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-3">E-Commerce Backend</h3>
+            <p class="text-gray-600 mb-4">Laravel Admin Panel with product, orders, users & API system.</p>
+            <a href="projects.html" class="text-indigo-600 font-bold hover:underline">View Project →</a>
+          </div>
         </div>
 
-        <div class="bg-white shadow-lg rounded-xl p-6 hover:-translate-y-2 transition">
-          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-          <p class="text-gray-600 text-sm mb-4">Complete responsive portfolio with Tailwind.</p>
-          <a href="projects.html" class="text-indigo-600 font-medium">View Project →</a>
+        <!-- IoT -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-4">
+          <div class="h-56 bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+            <span class="text-white text-6xl font-extrabold opacity-20">IoT</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-3">IoT Notice Board</h3>
+            <p class="text-gray-600 mb-4">ESP32 + Python backend + Android app for real-time notice updates.</p>
+            <a href="projects.html" class="text-indigo-600 font-bold hover:underline">View Project →</a>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ================= EXPERIENCE SECTION ================= -->
-  <section class="py-20 bg-indigo-600 text-white text-center">
-    <h2 class="text-4xl font-bold mb-4">Seeking Internship Opportunities</h2>
-    <p class="max-w-2xl mx-auto text-lg font-light">
-      Open to Backend / Software Development roles in **Germany, India** or Remote.  
-      Ready to learn, contribute & grow with innovative companies.
-    </p>
 
-    <a href="contact.html"
-      class="mt-8 inline-block bg-white text-indigo-700 px-10 py-3 rounded-lg shadow hover:bg-gray-100 font-semibold transition">
-      Hire Me
-    </a>
+
+  <!-- CTA -->
+  <section class="py-28 bg-gradient-to-r from-indigo-700 to-purple-800 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-8">Let's Build Something Great</h2>
+      <p class="text-xl md:text-2xl mb-10 opacity-90">
+        Open for <strong>Backend • Full-Stack • Android</strong> internships  
+        Available from <strong>2026</strong> for global or remote opportunities.
+      </p>
+      <a href="contact.html"
+         class="inline-block bg-white text-indigo-700 px-12 py-6 rounded-2xl text-2xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition">
+        Get in Touch
+      </a>
+    </div>
   </section>
+
 
   <!-- Footer -->
   <div w3-include-html="components/footer.html"></div>
@@ -137,22 +198,17 @@
   <script src="assets/js/main.js"></script>
   <script>
     function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      z = document.getElementsByTagName("*");
+      var z, i, elmnt, file;
+      z = document.querySelectorAll("[w3-include-html]");
       for (i = 0; i < z.length; i++) {
         elmnt = z[i];
         file = elmnt.getAttribute("w3-include-html");
         if (file) {
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-              elmnt.innerHTML = this.responseText;
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          };
-          xhttp.open("GET", file, true);
-          xhttp.send();
+          fetch(file).then(res => res.text()).then(data => {
+            elmnt.innerHTML = data;
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          });
           return;
         }
       }
@@ -160,26 +216,5 @@
     includeHTML();
   </script>
 
-  <!-- Simple Animation -->
-  <style>
-    .animate-fadeIn {
-      animation: fadeIn 1.2s ease-in-out forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-
 </body>
-
 </html>
