@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,7 @@
 
 <body class="bg-gray-50">
 
-  <!-- Include Header -->
+  <!-- Header Include -->
   <div id="header"></div>
   <script>
     fetch("components/header.html")
@@ -18,96 +19,151 @@
   </script>
 
   <!-- Hero Section -->
-  <section class="pt-32 pb-20 bg-gradient-to-b from-white to-gray-100">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Hi! I’m <span class="text-indigo-600 font-semibold">Rohit Mehta</span>, a passionate Computer Engineering student specializing in
-        <strong class="text-indigo-600">Android Development</strong> and <strong class="text-indigo-600">Backend Development</strong>.
-      </p>
-    </div>
-  </section>
-
-  <!-- About Content -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
-      <!-- Image -->
-      <div class="flex justify-center">
-        <img src="assets/profile.png" alt="Rohit Mehta" class="w-64 rounded-2xl shadow-lg">
-      </div>
+  <section class="pt-32 pb-20 bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
       <!-- Text -->
       <div>
-        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Who I Am</h2>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          I am a Nepali student studying Computer Engineering in India with a strong interest in
-          software development, modern technologies, and building impactful digital products.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed mb-4">
-          My journey started with curiosity to create mobile apps—and now I am building full-stack
-          applications using <strong>Kotlin</strong>, <strong>Jetpack Compose</strong>,
-          <strong>Laravel</strong>, <strong>Node.js</strong>, and <strong>Firebase</strong>.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed">
-          My long-term goal is to secure an internship/job opportunity in <strong>Germany</strong>
-          and contribute to a global tech environment.
+        <h1 class="text-5xl font-extrabold text-gray-800 leading-tight mb-4">
+          About Me
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          I am <span class="font-semibold text-indigo-600">Rohit Mehta</span>, a passionate Computer Engineering student focused on building
+          modern digital experiences through <strong>Android Development</strong>,
+          <strong>Backend Engineering</strong>, and <strong>Cloud-based solutions</strong>.
         </p>
       </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="assets/images/IMG20250607125138.jpg"
+          class="rounded-2xl w-72 shadow-2xl transform hover:scale-105 transition duration-500" alt="Rohit Mehta">
+      </div>
+
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl text-center font-bold text-gray-800 mb-10">My Skills</h2>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <div class="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition">
-          <h3 class="text-xl font-bold text-indigo-600 mb-2">Android Development</h3>
-          <p class="text-gray-600">Kotlin, Jetpack Compose, Firebase, MVVM Architecture</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition">
-          <h3 class="text-xl font-bold text-indigo-600 mb-2">Backend Development</h3>
-          <p class="text-gray-600">Laravel, PHP, Node.js, REST APIs, MySQL</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition">
-          <h3 class="text-xl font-bold text-indigo-600 mb-2">Web Development</h3>
-          <p class="text-gray-600">HTML, CSS, JavaScript, Tailwind CSS</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition">
-          <h3 class="text-xl font-bold text-indigo-600 mb-2">Tools & Platforms</h3>
-          <p class="text-gray-600">Git, GitHub, Figma, Firebase, Linux</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 border hover:shadow-xl transition">
-          <h3 class="text-xl font-bold text-indigo-600 mb-2">Soft Skills</h3>
-          <p class="text-gray-600">Teamwork, Communication, Problem-solving, Adaptability</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Future Goals -->
+  <!-- Intro Section -->
   <section class="py-16">
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-gray-800 mb-6">My Future Goals</h2>
-      <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
-        I am preparing for international opportunities and constantly improving my skills.
-        My dream is to join a company in Germany as a software development intern and 
-        contribute to building high-quality digital products.
+      <p class="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
+        I am originally from Nepal and currently studying Computer Engineering in India.  
+        Technology has always inspired me — especially the ability to turn ideas into mobile apps
+        and digital products that make a real impact.  
+        I specialize in <strong>Kotlin</strong>, <strong>Jetpack Compose</strong>,
+        <strong>Laravel</strong>, and <strong>Firebase</strong>, and I enjoy building clean,
+        optimized, and scalable applications.
       </p>
     </div>
   </section>
 
-  <!-- Include Footer -->
+  <!-- Experience & Skills -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">What I Do</h2>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+        <div class="bg-white p-8 shadow-md rounded-2xl hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-3">Android Development</h3>
+          <p class="text-gray-600">
+            Kotlin, Jetpack Compose, MVVM, Firebase, Clean UI + scalable architecture.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-md rounded-2xl hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-3">Backend Engineering</h3>
+          <p class="text-gray-600">
+            Laravel, Node.js, REST APIs, Authentication, MySQL, scalable backend logic.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-md rounded-2xl hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-3">Web Development</h3>
+          <p class="text-gray-600">
+            Clean responsive websites using HTML, CSS, JavaScript, Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-md rounded-2xl hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-3">Cloud & Tools</h3>
+          <p class="text-gray-600">
+            Git & GitHub, Firebase, Linux, Figma, CLI tools, deployment basics.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 shadow-md rounded-2xl hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold text-indigo-600 mb-3">Soft Skills</h3>
+          <p class="text-gray-600">
+            Communication, teamwork, leadership, problem-solving, documentation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4">
+
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">My Journey</h2>
+
+      <div class="space-y-10">
+
+        <div class="flex items-start space-x-6">
+          <div class="w-3 h-3 bg-indigo-600 rounded-full mt-2"></div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">2023 – Started Coding</h3>
+            <p class="text-gray-600">Python, basics of programming, and problem-solving.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-6">
+          <div class="w-3 h-3 bg-indigo-600 rounded-full mt-2"></div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">2024 – Android Development</h3>
+            <p class="text-gray-600">Learned Kotlin, Android Studio & started making apps.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-6">
+          <div class="w-3 h-3 bg-indigo-600 rounded-full mt-2"></div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">2025 – Backend & Full-Stack</h3>
+            <p class="text-gray-600">Laravel + APIs + MySQL + UI/UX fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-6">
+          <div class="w-3 h-3 bg-indigo-600 rounded-full mt-2"></div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">2025 – Building Real Projects</h3>
+            <p class="text-gray-600">News apps, admin panels, company websites, and more.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6 text-center text-white">
+
+      <h2 class="text-3xl font-bold mb-6">My Future Goals</h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        My long-term goal is to secure a software development internship/job opportunity  
+        in <span class="text-indigo-400 font-semibold">Germany</span>, work in an 
+        international tech environment, and contribute to impactful global products.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Footer Include -->
   <div id="footer"></div>
   <script>
     fetch("components/footer.html")
