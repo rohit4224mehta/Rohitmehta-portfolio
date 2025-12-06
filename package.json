@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  },
+  "name": "my-portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern personal portfolio website built using HTML, CSS, and Tailwind, showcasing my projects, skills, education, and achievements.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit4224mehta/Rohitmehta-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit4224mehta/Rohitmehta-portfolio/issues"
+  },
+  "homepage": "https://github.com/rohit4224mehta/Rohitmehta-portfolio#readme"
+}

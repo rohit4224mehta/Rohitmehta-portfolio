@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects • Rohit Mehta - Backend Developer</title>
-  <meta name="description" content="Backend projects by Rohit Mehta: Laravel APIs, Python Flask, Android Kotlin, Full-Stack apps, and more."/>
+  <meta name="description" content="Backend & Full-Stack Projects by Rohit Mehta: Laravel REST APIs, Docker Deployment, Android Kotlin, IoT Systems & Live Websites"/>
 
   <!-- Tailwind + Inter Font -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,26 +12,26 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: { indigo: { 600: '#4f46e5', 700: '#4338ca' }}
         }
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
   <!-- Header -->
   <div w3-include-html="components/header.html"></div>
 
   <!-- Hero -->
-  <section class="pt-24 pb-16 text-center bg-gradient-to-b from-white to-gray-50">
+  <section class="pt-28 pb-16 text-center bg-gradient-to-b from-white to-gray-50">
     <div class="max-w-5xl mx-auto px-6">
       <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">My Projects</h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Real-world backend systems, REST APIs, full-stack applications, and Android apps I've built from scratch.
-        Focused on clean architecture, security, performance, and scalability.
+        Production-grade backend systems, secure REST APIs, Android apps, and full-stack web applications — built with Laravel, Docker, Kotlin, and deployed live.
       </p>
     </div>
   </section>
@@ -40,153 +40,138 @@
   <section class="py-16 px-6">
     <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
 
-      <!-- 1. E-Commerce Backend (Laravel) -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-indigo-500 to-purple-600 relative overflow-hidden">
-          <img src="assets/images/projects/ecommerce.jpg" alt="E-Commerce Admin" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black opacity-30"></div>
+      <!-- 1. Employee Management API -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group border-2 border-indigo-100">
+        <div class="relative h-56 bg-gradient-to-br from-indigo-600 to-purple-700 overflow-hidden">
+          <img src="assets/images/projects/employee-api.jpg" alt="Employee Management API" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+          <div class="absolute top-4 right-4 bg-green-500 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg">LIVE on Render</div>
         </div>
         <div class="p-7">
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">E-Commerce Admin Panel</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Employee Management API</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Full Laravel backend with Sanctum auth, product/category management, order tracking, REST APIs, and admin dashboard.
+            Secure REST API with Laravel + Sanctum authentication, role-based access, CRUD, pagination, filtering & search.
+            Deployed using Docker on Render.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
             <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full">Laravel</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">Sanctum</span>
             <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">MySQL</span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">REST API</span>
+            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Docker</span>
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">Render</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/ecommerce-laravel" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              Code
-            </a>
-            <a href="#" class="text-gray-500 font-medium">Live Demo →</a>
+          <div class="flex gap-6">
+            <a href="https://github.com/rohit4224mehta/employee-api-laravel" target="_blank" class="text-indigo-600 font-bold hover:underline">GitHub</a>
+            <a href="#" class="text-gray-600 font-medium">Postman Docs →</a>
           </div>
         </div>
       </div>
 
-      <!-- 2. NewsFlux - Android App -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-teal-500 to-cyan-600 relative overflow-hidden">
-          <img src="assets/images/projects/newsflux.jpg" alt="NewsFlux App" class="w-full h-full object-cover group-hover:scale-110 transition">
-          <div class="absolute inset-0 bg-black opacity-30"></div>
+      <!-- 2. NewsFlux – Android App -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+        <div class="h-56 bg-gradient-to-br from-teal-500 to-cyan-600 overflow-hidden">
+          <img src="assets/images/newsflux_logo.png" alt="NewsFlux App" class="w-full h-full object-cover group-hover:scale-110 transition">
         </div>
         <div class="p-7">
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">NewsFlux – News Reader</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">NewsFlux – News platform App</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Modern Android app using Kotlin, Jetpack Compose, Retrofit, Room DB, Firebase Auth & Push Notifications.
+            Modern news platform with live categories, bookmarking, search, dark mode & real-time updates using Firebase.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
             <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">Kotlin</span>
             <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-xs font-medium rounded-full">Jetpack Compose</span>
             <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">Firebase</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">MVVM</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/newsflux" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387..."/></svg>
-              Code
-            </a>
-            <a href="#" class="text-gray-500 font-medium">Play Store →</a>
+          <div class="flex gap-6">
+            <a href="https://github.com/rohit4224mehta/newsflux" target="_blank" class="text-indigo-600 font-bold hover:underline">GitHub</a>
+            <a href="#" class="text-gray-600 font-medium">Demo Video →</a>
           </div>
         </div>
       </div>
 
-      <!-- 3. Employee Management API (Python Flask) -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-purple-600 to-pink-600 relative overflow-hidden">
-          <img src="assets/images/projects/api.jpg" alt="API System" class="w-full h-full object-cover group-hover:scale-110 transition">
-          <div class="absolute inset-0 bg-black opacity-30"></div>
+      <!-- 3. Mithila Tech – IT Company CMS -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+        <div class="relative h-56 bg-gradient-to-br from-purple-600 to-pink-600 overflow-hidden">
+          <img src="assets/images/projects/mithila-tech.jpg" alt="Mithila Tech Website" class="w-full h-full object-cover group-hover:scale-110 transition">
+          <div class="absolute top-4 right-4 bg-green-500 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg">LIVE</div>
         </div>
         <div class="p-7">
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Employee Management API</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Mithila Tech – IT Company CMS</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Production-ready REST API with Flask, JWT auth, role-based access, PostgreSQL, rate limiting & full documentation.
+            Full dynamic company website with admin panel, career portal, services, testimonials & contact form.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">Python Flask</span>
-            <span class="px-3 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-full">PostgreSQL</span>
-            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">JWT</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full">Laravel</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">MySQL</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Blade</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/employee-api" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              Code
-            </a>
-            <a href="#" class="text-gray-500 font-medium">Postman Docs →</a>
+          <div class="flex gap-6">
+            <a href="https://mithilatech.in" target="_blank" class="text-indigo-600 font-bold hover:underline">Live Website</a>
           </div>
         </div>
       </div>
 
-      <!-- 4. IoT Notice Board System -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-green-500 to-emerald-600 relative overflow-hidden">
-          <img src="assets/images/projects/iot.jpg" alt="IoT Notice Board" class="w-full h-full object-cover group-hover:scale-110 transition">
-          <div class="absolute inset-0 bg-black opacity-30"></div>
+      <!-- 4. IoT Digital Notice Board -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+        <div class="h-56 bg-gradient-to-br from-green-500 to-emerald-700 overflow-hidden">
+          <img src="assets/images/projects/iot-notice.jpg" alt="IoT Notice Board" class="w-full h-full object-cover group-hover:scale-110 transition">
         </div>
         <div class="p-7">
           <h3 class="text-2xl font-bold text-gray-900 mb-3">IoT Digital Notice Board</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Real-time notice display using ESP32, Python backend (FastAPI), WebSocket, and Android controller app.
+            Real-time mobile-controlled LCD display using ESP32, Bluetooth & custom Android controller app.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">FastAPI</span>
-            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">ESP32</span>
-            <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">WebSocket</span>
+            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Arduino C++</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Bluetooth</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/iot-notice-board" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              Code
-            </a>
-            <a href="#" class="text-gray-500 font-medium">Demo Video →</a>
+          <div class="flex gap-6">
+            <a href="#" class="text-indigo-600 font-bold hover:underline">GitHub</a>
+            <a href="#" class="text-gray-600 font-medium">Demo Video →</a>
           </div>
         </div>
       </div>
 
-      <!-- 5. Task Management System (Full-Stack) -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-orange-500 to-red-600 relative overflow-hidden">
-          <img src="assets/images/projects/tasks.jpg" alt="Task App" class="w-full h-full object-cover group-hover:scale-110 transition">
-          <div class="absolute inset-0 bg-black opacity-30"></div>
+      <!-- 5. Easy Fitz – E-commerce Store -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+        <div class="h-56 bg-gradient-to-br from-orange-500 to-red-600 overflow-hidden">
+          <img src="assets/images/projects/easyfitz.jpg" alt="Easy Fitz Store" class="w-full h-full object-cover group-hover:scale-110 transition">
         </div>
         <div class="p-7">
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">TaskFlow – Task Manager</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Easy Fitz – Casual Wear Store</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Full-stack task app with Laravel backend, Vue.js frontend, drag-and-drop, team collaboration, and notifications.
+            Complete e-commerce platform with cart, checkout, and admin panel for inventory management.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">Laravel</span>
-            <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">Vue.js</span>
-            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">Inertia.js</span>
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">PHP</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">MySQL</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">JavaScript</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/taskflow" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              Code
-            </a>
-            <a href="#" class="text-gray-500 font-medium">Live Demo →</a>
+          <div class="flex gap-6">
+            <a href="https://github.com/rohit4224mehta/Easyfitz-store" class="text-indigo-600 font-bold hover:underline">GitHub</a>
+            <a href="#" class="text-gray-600 font-medium">Live Demo →</a>
           </div>
         </div>
       </div>
 
-      <!-- 6. Portfolio Website (This Site!) -->
-      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-        <div class="h-56 bg-gradient-to-br from-gray-700 to-gray-900 relative overflow-hidden">
-          <img src="assets/images/projects/portfolio.jpg" alt="Portfolio Website" class="w-full h-full object-cover group-hover:scale-110 transition">
-          <div class="absolute inset-0 bg-black opacity-40"></div>
+      <!-- 6. Personal Portfolio (This Site) -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+        <div class="h-56 bg-gradient-to-br from-gray-700 to-gray-900 overflow-hidden">
+          <img src="assets/images/image.png" alt="Personal Portfolio" class="w-full h-full object-cover group-hover:scale-110 transition">
         </div>
         <div class="p-7">
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Personal Portfolio (This Site)</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Personal Portfolio Website</h3>
           <p class="text-gray-600 mb-5 leading-relaxed">
-            Fully responsive, animated portfolio built with HTML, Tailwind CSS, and vanilla JS. SEO-optimized and mobile-first.
+            Fully responsive, modern developer portfolio built with Tailwind CSS and vanilla JavaScript.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Tailwind</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Tailwind CSS</span>
             <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full">Responsive</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">SEO</span>
           </div>
-          <div class="flex gap-5">
-            <a href="https://github.com/yourusername/portfolio" target="_blank" class="text-indigo-600 font-semibold hover:underline flex items-center gap-2">
-              Code
-            </a>
-            <a href="/" class="text-gray-500 font-medium">Live →</a>
+          <div class="flex gap-6">
+            <a href="https://github.com/rohit4224mehta/portfolio" target="_blank" class="text-indigo-600 font-bold hover:underline">GitHub</a>
+            <a href="/" class="text-gray-600 font-medium">Live Here</a>
           </div>
         </div>
       </div>
@@ -194,13 +179,16 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="py-20 bg-indigo-700 text-white text-center">
+  <!-- Call to Action -->
+  <section class="py-24 bg-gradient-to-r from-indigo-700 to-purple-800 text-white text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-6">Like What You See?</h2>
-      <p class="text-xl mb-8 opacity-90">I'm available for backend, full-stack, and Android internships — remote or on-site.</p>
-      <a href="contact.html" class="inline-block bg-white text-indigo-700 px-10 py-4 rounded-xl font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition">
-        Let's Talk
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Build Something Great?</h2>
+      <p class="text-xl mb-10 opacity-90 leading-relaxed">
+        Available for <strong>Backend • Full-Stack • Android</strong> Internships<br>
+        Nov 2025 – Mar 2026 • Remote Worldwide • Open to Relocation
+      </p>
+      <a href="contact.html" class="inline-block bg-white text-indigo-700 px-12 py-5 rounded-xl text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition">
+        Get In Touch
       </a>
     </div>
   </section>
@@ -208,30 +196,43 @@
   <!-- Footer -->
   <div w3-include-html="components/footer.html"></div>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js"></script>
+  <!-- Fixed Include Script (Works Locally + Online) -->
   <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute("w3-include-html");
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll("[w3-include-html]");
+      elements.forEach(el => {
+        const file = el.getAttribute("w3-include-html");
         if (file) {
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              elmnt.innerHTML = this.responseText;
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
+          fetch(file)
+            .then(response => {
+              if (!response.ok) throw new Error("File not found: " + file);
+              return response.text();
+            })
+            .then(data => {
+              el.innerHTML = data;
+              el.removeAttribute("w3-include-html");
+              // Re-scan for nested includes
+              const nested = el.querySelectorAll("[w3-include-html]");
+              if (nested.length) loadIncludes();
+            })
+            .catch(err => {
+              el.innerHTML = `<p class="text-red-600 text-sm p-4">Error loading component: ${file}</p>`;
+              console.error(err);
+            });
         }
-      }
+      });
+    });
+
+    // Optional: keep old function name for compatibility
+    function includeHTML() { loadIncludes(); }
+    function loadIncludes() {
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll("[w3-include-html]");
+        elements.forEach(el => el.getAttribute("w3-include-html") && el.click());
+      });
     }
-    includeHTML();
   </script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
